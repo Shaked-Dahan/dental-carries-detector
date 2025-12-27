@@ -1,4 +1,4 @@
-# 🦷 Dental Caries Detection System
+# Dental Caries Detection System
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dental-carries-detector.streamlit.app)
 
@@ -6,11 +6,11 @@ An advanced AI-powered web application for detecting dental caries (cavities) in
 - **Confidence Distribution Charts**: Visual representation of detection quality
 - **Detailed Reports**: Exportable JSON reports with complete detection data
 
-### 💾 Export Options
+### Export Options
 - **Annotated Images**: Download X-rays with highlighted caries areas
 - **JSON Reports**: Structured data for integration with other systems
 
-### 🎨 User Experience
+### User Experience
 - **Professional UI**: Clean, modern interface with custom styling
 - **Responsive Design**: Works on desktop and mobile devices
 - **Progress Indicators**: Real-time feedback during analysis
@@ -18,7 +18,7 @@ An advanced AI-powered web application for detecting dental caries (cavities) in
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Online Demo
 Visit our live demo: [Dental Caries Detector](https://dental-carries-detector.streamlit.app)
@@ -46,7 +46,7 @@ Visit our live demo: [Dental Caries Detector](https://dental-carries-detector.st
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dental-caries-detector/
@@ -60,11 +60,11 @@ dental-caries-detector/
 
 ---
 
-## 🧠 Model Performance
+## Model Performance
 
 Our **YOLOv8s** model achieves excellent performance on dental X-ray images:
 
-## 🏆 Results Comparison (Optimization Journey)
+## Results Comparison (Optimization Journey)
 
 We have iteratively optimized the training process to maximize performance within 15GB GPU memory.
 
@@ -80,10 +80,10 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 **Strategy C** switches to a larger model (**YOLOv8m**) with standard 640px images. This gives the model more "brain power" (25M params vs 11M) to understand complex features, which is expected to provide the best overall balance of detection and localization.
 
 ### Key Achievements
-- 🎯 **97% Precision**: When the model detects caries, it's correct 97% of the time
-- 📊 **13.6% improvement** in mAP50-95: Significantly more accurate bounding boxes
-- ⚡ **Fast inference**: 4.9ms per image on Tesla T4 GPU
-- 🔬 **Clinical reliability**: High precision makes it suitable for medical applications
+- **97% Precision**: When the model detects caries, it's correct 97% of the time
+- **13.6% improvement** in mAP50-95: Significantly more accurate bounding boxes
+- **Fast inference**: 4.9ms per image on Tesla T4 GPU
+- **Clinical reliability**: High precision makes it suitable for medical applications
 
 ### Training Details
 - **Base Model**: YOLOv8s (Transfer Learning from COCO)
@@ -95,7 +95,7 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 
 ---
 
-## 🎯 How to Use
+## How to Use
 
 1. **Upload Image(s)**
    - Click the upload button
@@ -110,10 +110,10 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 3. **View Results**
    - Original and annotated images displayed side-by-side
    - Color-coded bounding boxes indicate confidence levels:
-     - 🟢 Green: 80-100% (High confidence)
-     - 🟡 Yellow: 60-80% (Medium confidence)
-     - 🟠 Orange: 40-60% (Low confidence)
-     - 🔴 Red: <40% (Very low confidence)
+     - Green: 80-100% (High confidence)
+     - Yellow: 60-80% (Medium confidence)
+     - Orange: 40-60% (Low confidence)
+     - Red: <40% (Very low confidence)
 
 4. **Analyze Statistics**
    - View detection count and confidence metrics
@@ -126,7 +126,7 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 - **Frontend**: Streamlit 
 - **Deep Learning**: Ultralytics YOLOv8s
@@ -137,7 +137,7 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 
 ---
 
-## 📊 Application Features (v2.0)
+## Application Features (v2.0)
 
 ### Error Handling & Validation
 - File size validation (max 10MB)
@@ -161,7 +161,7 @@ While the "Balanced" approach (800px images) improved Precision and Recall signi
 
 ---
 
-## 🔬 Model Training
+## Model Training
 
 The model was trained using advanced techniques optimized for T4 GPU:
 
@@ -197,18 +197,18 @@ mixup=0.05          # Mixup augmentation
 ```
 
 ### Improvements Over Baseline
-- ✅ Upgraded from YOLOv8n to YOLOv8s (3.7x more parameters)
-- ✅ Enhanced augmentation pipeline (9 augmentations)
-- ✅ Optimized hyperparameters for stability
-- ✅ Extended training duration (120 → 200 epochs)
-- ✅ Memory-optimized for T4 GPU constraints
+- Upgraded from YOLOv8n to YOLOv8s (3.7x more parameters)
+- Enhanced augmentation pipeline (9 augmentations)
+- Optimized hyperparameters for stability
+- Extended training duration (120 → 200 epochs)
+- Memory-optimized for T4 GPU constraints
 
 For detailed training information, see:
 - `train_caries.ipynb` - Latest optimized training
 
 ---
 
-## 🚢 Deployment
+## Deployment
 
 ### Streamlit Cloud Deployment
 
@@ -238,7 +238,7 @@ For detailed training information, see:
 
 ---
 
-## 📝 Usage Examples
+## Usage Examples
 
 ### Single Image Analysis
 ```python
@@ -257,7 +257,7 @@ For detailed training information, see:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -269,7 +269,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset**: Roboflow Universe - Dental Caries X-ray Dataset
 - **Model**: Ultralytics YOLOv8
@@ -278,51 +278,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions, suggestions, or issues, please open an issue on GitHub.
 
----
-
-## 🔄 Version History
-
-### v2.2 (Strategy C) - November 2025
-- 🚀 **Strategic Upgrade to YOLOv8m**
-- 🧠 Capacity-optimized training (640px images + 25M parameters)
-- 🎯 Target: >90% mAP50 with high clinical precision
-- 🔄 Current active strategy
-
-### v2.1 (Balanced Optimization) - November 2025
-- ⚖️ **Balanced Config**: YOLOv8s with 800px images
-- 🏥 **Clinical Improvements**: 93.5% Precision, 77.5% Recall
-- 📉 Slight mAP decrease (87.4%) due to localization challenges
-- 💾 Memory optimized (Batch 10) to fit 15GB
-- 
-### v2.0 (Current) - November 2025
-- 🎯 **Upgraded to YOLOv8s model** (+13.6% mAP50-95, +10.8% Precision)
-- ✨ Complete UI redesign with professional styling
-- 📊 Added statistics dashboard and charts
-- 💾 Implemented download functionality for images and reports
-- 🔄 Added batch processing support
-- ⚡ Performance optimizations and error handling
-- 📱 Improved mobile responsiveness
-- 🧠 Extended training to 200 epochs with optimized hyperparameters
-
-### v1.0 - October 2025
-- 🎯 Initial release with YOLOv8n model
-- 🎨 Simple color-coded bounding boxes
-- ⚙️ Confidence threshold slider
-- 📊 Basic detection metrics (82.6% mAP50, 44.2% mAP50-95)
-
----
-
 <div align="center">
-
-**Made with ❤️ using Streamlit and YOLOv8**
 
 **Current Model: YOLOv8s | mAP50: 88.3% | Precision: 97.0%**
 
 </div>
+
 
 
 
